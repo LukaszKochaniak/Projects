@@ -1,0 +1,38 @@
+root { 
+    display: block;
+}
+.root {
+    /*-fx-background-image: url("background.jpg");*/
+    -fx-background-color: #34495e;
+}
+
+#welcomeText {
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: aquamarine;
+    -fx-text-fill: white;
+}
+
+#levelText, #chooseLanguage{
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: whitesmoke;
+}
+
+#authorTitle{
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: whitesmoke;
+}
+
+#author{
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: whitesmoke;
+}
+
+#btnEasy, #btnMedium, #btnHard, #btnEnglish, #btnPolish {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}

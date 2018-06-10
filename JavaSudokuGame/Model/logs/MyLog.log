@@ -1,0 +1,6 @@
+cze 10, 2018 12:32:09 PM com.mycompany.sudoku.daos.JdbcSudokuBoardDao write
+INFO: write: done serializing: com.mycompany.sudoku.SudokuBoard id: 28
+cze 10, 2018 12:32:09 PM com.mycompany.sudoku.daos.JdbcSudokuBoardDao readWithId
+INFO: read: done de-serializing: com.mycompany.sudoku.SudokuBoard
+cze 10, 2018 12:32:09 PM com.mycompany.sudoku.daos.JdbcSudokuBoardDao close
+INFO: Closing!

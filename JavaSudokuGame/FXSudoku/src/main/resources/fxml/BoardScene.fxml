@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane id="gridPane" alignment="top_center" onKeyPressed="#canvasKeyPressed" prefHeight="600.0" prefWidth="800.0" styleClass="root" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comprog04.fxsudoku.FXMLBoardController">
+    
+    <columnConstraints>
+        <ColumnConstraints percentWidth="70" />
+        <ColumnConstraints percentWidth="30" />
+    </columnConstraints>
+  
+    <rowConstraints>
+        <RowConstraints percentHeight="55" vgrow="SOMETIMES" />
+        <RowConstraints percentHeight="45" vgrow="SOMETIMES" />
+    </rowConstraints>
+    
+    <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+            <children>
+                <Button fx:id="btnBack" onAction="#backButtonAction" prefHeight="40.0" prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnDifficulty" mnemonicParsing="false" onAction="#difficultyButtonAction" prefHeight="40.0" prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnLoad" mnemonicParsing="false" onAction="#loadButtonAction" prefHeight="40.0" prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="40.0" prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnCorrectness" mnemonicParsing="false" onAction="#correctnessButtonAction" prefHeight="40.0" prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnAutofill" mnemonicParsing="false" onAction="#autofillButtonAction" prefHeight="40.0" prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0"> 
+                    <Button fx:id="button_one" onAction="#buttonOnePressed" prefHeight="60.0" prefWidth="60.0" text="1">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="button_two" onAction="#buttonTwoPressed" prefHeight="60.0" prefWidth="60.0" text="2">
+                        <HBox.margin>
+                            <Insets left="10.0" right="10.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="button_three" onAction="#buttonThreePressed" prefHeight="60.0" prefWidth="60.0" text="3">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                </HBox> 
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0"> 
+                    <Button fx:id="button_four" onAction="#buttonFourPressed" prefHeight="60.0" prefWidth="60.0" text="4">                        
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="button_five" onAction="#buttonFivePressed" prefHeight="60.0" prefWidth="60.0" text="5">                        
+                        <HBox.margin>
+                            <Insets left="10.0" right="10.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="button_six" onAction="#buttonSixPressed" prefHeight="60.0" prefWidth="60.0" text="6">                        
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <Button fx:id="button_seven" onAction="#buttonSevenPressed" prefHeight="60.0" prefWidth="60.0" text="7">                        
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="button_eight" onAction="#buttonEightPressed" prefHeight="60.0" prefWidth="60.0" text="8">                        
+                        <HBox.margin>
+                            <Insets left="10.0" right="10.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="button_nine" onAction="#buttonNinePressed" prefHeight="60.0" prefWidth="60.0" text="9">                        
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowSpan="2">
+            <children>
+                <Canvas fx:id="canvas" height="450.0" onMouseClicked="#canvasMouseClicked" width="450.0" />
+            </children>
+        </VBox>
+    </children>
+
+</GridPane>

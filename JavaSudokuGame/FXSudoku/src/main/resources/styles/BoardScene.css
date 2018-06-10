@@ -1,0 +1,17 @@
+root { 
+    display: block;
+}
+.root {
+    /*-fx-background-image: url("background.jpg");*/
+    -fx-background-color: #34495e;
+}
+
+.button {
+    -fx-font-weight: bold;
+}
+
+#button_one, #button_two, #button_three, #button_four, #button_five, #button_six, #button_seven, #button_eight, #button_nine{
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill:#34495e;
+}
