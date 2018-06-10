@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">LAYLA</string>
+
+    <!-- Common general strings -->
+    <string name="success">Sukces</string>
+    <string name="change">Zmień</string>
+    <string name="confirm">Na pewno?</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="LAYLA">LAYLA</string>
+    <string name="noInternet">Brak dostępu do Internetu</string>
+    <string name="refresh">Odśwież</string>
+    <string name="more">Więcej</string>
+    
+    <!-- SignUp, Login, Reset password activities-->
+    <string name="signUp_enterEmail">Podaj adres email</string>
+    <string name="signUp_enterUsername">Podaj nazwę uzytkownika</string>
+    <string name="signUp_enterPassword">Podaj hasło</string>
+    <string name="signUp_passwordShort">Hasło za krótkie, wymagane minimum 6 znaków</string>
+    
+    <string name="login_fingerprintUnknown">Odcisk palca nierozpoznany</string>
+    <string name="action_sign_in_short">Rejestruj</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Hasło za krótkie, wymagane minimum 6 znaków</string> //remove
+    <string name="auth_failed">Błąd autentykacji, sprawdź email i hasło lub zarejestruj się</string>
+    <string name="hint_password">Hasło</string>
+    <string name="hint_username">Użytkownik</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Nie jesteś członkiem? Zarejestruj się</string>
+    <string name="btn_link_to_login">Jesteś zarejestrowany? Zaloguj się</string>
+    <string name="logout_success">Pomyślnie wylogowano</string>
+
+    <!--Parse server-->
+    <string name="parse_app_id">ed27f8b32bcae4823258606d1f059228db9839dd</string>
+    <string name="parse_client_key">07bed1deda6b12c4ea3b51e9a722eeeaf8d4d414</string>
+
+    <!-- Patient's menu strings-->
+    <string name="gps">GPS</string>
+    <string name="notice">Notice</string>
+    <string name="_3opt">3Opt</string>
+    <string name="_4opt">4Opt</string>
+
+    <string name="slide_1_title">GPS</string>
+    <string name="slide_1_desc">Gdzie jesteś?</string>
+    <string name="slide_2_title">Notatnik</string>
+    <string name="slide_2_desc">Opowiedz jak się czujesz</string>
+    <string name="slide_3_title">Chat</string>
+    <string name="slide_3_desc">Porozmawiaj z doktorem</string>
+    <string name="slide_4_title">Ustawienia</string>
+    <string name="slide_4_desc">Zmień ustawienia</string>
+
+    <!-- Supervisor's menu strings-->
+    <string name="DOCTORslide_1_title">GPS</string>
+    <string name="DOCTORslide_1_desc">Lokalizacja pacjenta</string>
+    <string name="DOCTORslide_2_title">Notatnik</string>
+    <string name="DOCTORslide_2_desc">Lista pacjentów</string>
+    <string name="DOCTORslide_3_title">Chat</string>
+    <string name="DOCTORslide_3_desc">Porozmawiaj z pacjentem</string>
+    <string name="DOCTORslide_4_title">Ustawienia</string>
+    <string name="DOCTORslide_4_desc">Zmień ustawienia</string>
+
+    <!-- Chat activity -->
+    <string name="btn_send">Wyślij</string>
+    <string name="chat_with">Rozmowa z </string>
+
+    <!-- Activities-->
+    <string name="title_activity_welcome">Zaloguj się</string>
+    <string name="title_activity_reset_password">Resetowanie hasła</string>
+    <string name="title_activity_login">Zarejestruj się</string>
+    <string name="title_activity_gps">GPS</string>
+    <string name="title_activity_maps">Mapy</string>
+    <string name="title_activity_note">Notatnik</string>
+    <string name="title_activity_patient_search">Położenie pacjenta</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_menuPatient">Menu pacjenta</string>
+    <string name="title_activity_listPatient">Lista pacjentów</string>
+    <string name="title_activity_chat">Chat</string> //zmienić
+    <string name="title_activity_settings">Ustawienia</string>
+    <string name="title_activity_change_doctor">Zmień doktora</string>
+    <string name="title_activity_submit_doctor">Potwierdź tego doktora</string>
+    <string name="title_activity_change_password">Zmień hasło</string>
+    <string name="title_activity_settings_open">Otwórz ustawienia</string>
+
+    <string name="unknown_address">Nieznany adres</string>
+
+    <!-- Heartrate monitor -->
+    <string name="heartRate_title">Rytm serca</string>
+    
+    <!-- Note Editor menu -->
+    <string name="mood_recognition">Oceń samopoczucie</string>
+    <string name="activities_result">Zbieranie wyników</string>
+    <string name="hint_email">email</string>
+    <string name="reset_password">RESETUJ</string>
+    <string name="btn_link_to_reset">Nie pamiętasz hasła? Zresetuj je</string>
+    <string name="back_to_login">Powrót do logowania</string>
+    <string name="title_activity_heart_rate">Rytm serca</string>
+    <string name="noteEditor_writeNote">Napisz notatkę</string>
+    <string name="notebook_title">Notatnik</string>
+    
+    <!-- Face recognition -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Wymagany dostęp do kamery</string>
+    <string name="no_camera_permission">Brak pozwoleń do kamery. Aplikacja zostanie wyłączona.</string>
+    <string name="low_storage_error">Nie można pobrać bibliotek. Brak pamięci</string>
+    <string name="title_activity_face_recognition">Rozpoznawanie twarzy</string>
+    <string name="default_text">--</string>
+    
+    <!-- Submit doctor -->
+    <string name="submitDoctor_submit">Potwierdź doktora</string>
+    <string name="submitDoctor_enterName">Wprowadź nazwę twojego doktora</string>
+    <string name="submitDoctor_noSuchDoctor">Doktor o takim imieniu nie istnieje</string>
+
+    <!-- Change doctor -->
+    <string name="changeDoctor_previousDoctor">Obecny doktor</string>
+    <string name="changeDoctor_newDoctor">Nowy doktor</string>
+    <string name="changeDoctor_emptyPreviousDoctor">Wprowadź nazwę obecnego doktora</string>
+    <string name="changeDoctor_emptyNewDoctor">Wprowadź nazwę nowego doktora</string>
+    <string name="changeDoctor">Zmień doktora</string>
+    <string name="changeDoctor_doctorName">Nazwa doktora</string>
+
+    <!-- Change password -->
+    <string name="changePassword_submit">Potwierdź</string>
+    <string name="changePassword_password">Hasło</string>
+    <string name="changePassword_repeatPassword">Powtórz hasło</string>
+    <string name="changePassword_enterPassword">Wprowadź hasło</string>
+    <string name="changePassword_passwordsDifferent">Hasła się różnią</string>
+    <string name="changePassword">Zmień hasło</string>
+
+    <!-- Reset password -->
+    <string name="resetPassword_email">Wprowadź adres email</string>
+
+    <!-- Delete account -->
+    <string name="deleteAccount_message">Chcesz usunąć konto? Wszystkie dane zostaną skasowane.</string>
+    <string name="deleteAccount_deleteSuccessful">Konto pomyślnie usunięte</string>
+
+    <!-- Settings -->
+    <string name="settings">Ustawienia</string>
+    <string name="settings_logout">Wyloguj</string>
+    <string name="settings_deletePatient">Usuń pacjenta</string>
+    <string name="settings_changePassword">Zmień hasło</string>
+    <string name="settings_changeDoctor">Zmień doktora</string>
+    <string name="settings_deleteAccount">Usuń konto</string>
+    <string name="settings_aboutUs">O nas</string>
+    <string name="settings_login">Zmień ustawienia</string>
+    <string name="settings_open">Otwórz ustawienia</string>
+
+    <!-- Different moods -->
+    <string name="mood1">1/7</string>
+    <string name="mood2">2/7</string>
+    <string name="mood3">3/7</string>
+    <string name="mood4">4/7</string>
+    <string name="mood5">5/7</string>
+    <string name="mood6">6/7</string>
+    <string name="mood7">7/7</string>
+    <string name="backToMenu">Cofnij</string>
+
+</resources>

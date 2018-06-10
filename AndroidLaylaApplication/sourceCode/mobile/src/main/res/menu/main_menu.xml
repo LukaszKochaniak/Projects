@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main_setting"
+        android:title="@string/heartRate_title" />
+    <item
+        android:id="@+id/menu_main_setting2"
+        android:title="@string/mood_recognition" />
+
+    <item
+        android:id="@+id/menu_main_setting3"
+        android:title="@string/activities_result" />
+
+</menu>

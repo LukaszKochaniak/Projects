@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.ChatHotButtons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/MyActionBarTheme"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/button1"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="0"
+
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="@drawable/first_button"
+                android:drawableTop="@drawable/ic_home_white_128dp"
+
+                android:text="@string/hot_button_one"
+                android:textColor="#e8e9e9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button2"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="1"
+
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="@drawable/second_button"
+                android:drawableTop="@drawable/ic_call_white_128dp"
+
+                android:text="@string/hot_button_two"
+                android:textColor="#e8e9e9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button3"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="0"
+
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/third_button"
+                android:drawableTop="@drawable/ic_local_hospital_white_128dp"
+
+                android:text="@string/hot_button_three"
+                android:textColor="#e8e9e9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button4"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="1"
+
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/fourth_button"
+                android:drawableTop="@drawable/ic_chat_white_128dp"
+
+                android:text="@string/hot_button_four"
+                android:textColor="#e8e9e9"
+                android:textSize="20sp" />
+
+        </GridLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.layla">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <application
+        android:name=".StarterParse"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">>
+
+        <service android:name="com.parse.PushService" />
+        <!--
+        <receiver android:name=".modules.ChatReceiver" / "ParseCustomBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name=".modules.ChatReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.user.parsetest" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/parse_client_key" />
+
+        <!-- to change!!! -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <!-- ^^^^^^^to change^^^^^^^ -->
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GridMenu"
+            android:label="@string/title_activity_menu" />
+        <activity
+            android:name=".MainMenuMore"
+            android:label="@string/title_activity_menu" />
+        
+        <activity android:name=".auth.FingerLogin" />
+        <activity
+            android:name=".auth.SignUp"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".auth.Login"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".auth.SubmitYourDoctor"
+            android:label="@string/title_activity_submit_doctor" />
+        <!-- ######################################################### -->
+        <activity android:name=".modules.EmergencyData" />
+        <activity android:name=".modules.ChatHotButtons" />  
+        <activity
+            android:name=".modules.PatientGPS"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".modules.Notebook"
+            android:label="@string/title_activity_note" />
+        <activity
+            android:name=".modules.NoteEditor"
+            android:label="@string/title_activity_note" />
+        <activity
+            android:name=".modules.Chat"
+            android:label="@string/title_activity_chat" />
+        <activity
+            android:name=".modules.NewNote"
+            android:label="@string/title_activity_note" />
+        <activity
+            android:name=".modules.HeartRateMonitor"
+            android:label="@string/title_activity_heart_rate" />
+        <receiver
+            android:name=".modules.GPSReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.layla.modules.PatientGPS" />
+            </intent-filter>
+        </receiver>      
+        <!-- ######################################################### -->
+        <activity
+            android:name=".doctor.PatientList"
+            android:label="@string/title_activity_listPatient" />
+        <activity
+            android:name=".doctor.PatientSearch"
+            android:label="@string/title_activity_patient_search" />
+        <!-- ######################################################### -->
+        <activity android:name=".settings.HotButtonsFill"></activity>
+        <activity
+            android:name=".settings.ChangeDoctor"
+            android:label="@string/title_activity_change_doctor" />
+        <activity
+            android:name=".settings.ChangePassword"
+            android:label="@string/title_activity_change_password" />
+        <activity
+            android:name=".settings.ResetPassword"
+            android:label="@string/title_activity_reset_password" />
+        <activity
+            android:name=".settings.GridSettings"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".settings.LoginToSettings"
+            android:label="@string/title_activity_settings_open" />
+        <!-- ######################################################### -->
+        <activity
+            android:name=".facetracker.FaceTracker"
+            android:label="@string/title_activity_face_recognition" />
+        <activity
+            android:name=".doctor.NoteReader"
+            android:label="@string/title_activity_note_reader" />
+            
+        <!-- can be a problem with Update Customer constructor -->
+        <service
+            android:name=".modules.UpdateCustomerRequests"
+            android:enabled="true" />
+        
+    </application>
+</manifest>
